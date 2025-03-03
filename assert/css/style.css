@@ -1,0 +1,109 @@
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%; /* 让图片填满容器 */
+  object-fit: cover; /* 确保图片比例不变形 */
+}
+
+.maincolor {
+  color: #ff584f;
+}
+
+.mainbgcolor {
+  background: #ff584f !important;
+}
+
+.tab1content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /* 确保卡片顶部对齐 */
+}
+
+.item {
+  width: 50%;
+  padding: 0.2rem;
+  box-sizing: border-box; /* 确保 padding 不会影响宽度 */
+}
+
+.form-control {
+  border-color: #ff584f;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #ff584f;
+}
+
+a {
+  color: gray;
+}
+
+.title,
+.btn-outline-secondary,
+.btn-primary {
+  color: #fff !important;
+  background-color: #ff584f !important;
+  border-color: #ff584f !important;
+}
+
+.title {
+  padding: 0.42rem;
+}
+
+.btnwide {
+  width: 100%;
+}
+
+.btnwide span {
+  color: #fff;
+  font-size: 12px;
+}
+
+.card-img-top {
+  height: 150px; /* 增加图片高度 */
+  object-fit: cover; /* 确保图片比例不变形 */
+}
+
+.card-body {
+  padding: 0.2rem 0.7rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 确保内容均匀分布 */
+  height: 100px; /* 调整卡片内容高度 */
+}
+
+.no {
+  width: 60px;
+  height: 30px;
+  color: #fff;
+  background-color: #ff584f;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.card {
+  position: relative;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* 确保卡片高度一致 */
+}
+
+.card-title {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  line-height: 1.2; /* 确保标题行高一致 */
+}
+
+.btn-primary {
+  margin-top: auto; /* 将按钮推到卡片底部 */
+}

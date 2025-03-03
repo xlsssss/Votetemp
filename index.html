@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>最佳味蕾 金筷子大赛</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="assert/css/style.css">
+</head>
+<body>
+  <div class="containbox">
+    <div class="top">
+      <img src="assert/imgs/timg.jpg" alt="厨神争夺 金筷子大赛">
+    </div>
+    <div style="padding: 10px;">
+      <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">投票</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">排行</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="input-group mb-3 mt-3">
+            <input type="text" class="form-control" placeholder="输入姓名搜索" aria-label="输入姓名搜索" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                <svg class="bi bi-search" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
+                  <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"/>
+                </svg>
+                搜索
+              </button>
+            </div>
+          </div>
+          <div class="tab1content masonry">
+            <div class="item">
+              <div class="card">
+                <div class="no">1号</div>
+                <img src="assert/imgs/1.jpg" class="card-img-top" alt="JOJO">
+                <div class="card-body text-center">
+                  <h5 class="card-title">JOJO(千万级美食博主)</h5>
+                  <a href="javascript:;" class="btn btn-primary btnwide" onclick="todetail()">投票
+                    <span>9457票</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="no">2号</div>
+                <img src="assert/imgs/2.jpg" class="card-img-top" alt="德文 Devin">
+                <div class="card-body text-center">
+                  <h5 class="card-title">林真理子(omakase在东北)</h5>
+                  <a href="javascript:;" class="btn btn-primary btnwide" onclick="todetail()">投票
+                    <span>7324票</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="no">3号</div>
+                <img src="assert/imgs/3.jpg" class="card-img-top" alt="林真理子">
+                <div class="card-body text-center">
+                  <h5 class="card-title">金世正(韩国料理三代目)</h5>
+                  <a href="javascript:;" class="btn btn-primary btnwide" onclick="todetail()">投票
+                    <span>2148票</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="no">4号</div>
+                <img src="assert/imgs/4.jpg" class="card-img-top" alt="德文 Devin">
+                <div class="card-body text-center">
+                  <h5 class="card-title">王萱希(糖醋小厨娘)</h5>
+                  <a href="javascript:;" class="btn btn-primary btnwide" onclick="todetail()">投票
+                    <span>6213票</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="no">5号</div>
+                <img src="assert/imgs/5.jpg" class="card-img-top" alt="林真理子">
+                <div class="card-body text-center">
+                  <h5 class="card-title">德文 Devin(帕嘉特酒店主厨)</h5>
+                  <a href="javascript:;" class="btn btn-primary btnwide" onclick="todetail()">投票
+                    <span>5876票</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="no">6号</div>
+                <img src="assert/imgs/6.jpg" class="card-img-top" alt="德文 Devin">
+                <div class="card-body text-center">
+                  <h5 class="card-title">老张厨房(精品私房菜)</h5>
+                  <a href="javascript:;" class="btn btn-primary btnwide" onclick="todetail()">投票
+                    <span>4569票</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="no">7号</div>
+                <img src="assert/imgs/7.jpg" class="card-img-top" alt="林真理子">
+                <div class="card-body text-center">
+                  <h5 class="card-title">刘兆喜(美食家)</h5>
+                  <a href="javascript:;" class="btn btn-primary btnwide" onclick="todetail()">投票
+                    <span>10523票</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="no">8号</div>
+                <img src="assert/imgs/8.jpg" class="card-img-top" alt="德文 Devin">
+                <div class="card-body text-center">
+                  <h5 class="card-title">朱有曾(粤式住家靓汤)</h5>
+                  <a href="javascript:;" class="btn btn-primary btnwide" onclick="todetail()">投票
+                    <span>2875票</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="no">9号</div>
+                <img src="assert/imgs/9.jpg" class="card-img-top" alt="林真理子">
+                <div class="card-body text-center">
+                  <h5 class="card-title">陈署刚(美味杭帮菜)</h5>
+                  <a href="javascript:;" class="btn btn-primary btnwide" onclick="todetail()">投票
+                    <span>3892票</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                <div class="no">10号</div>
+                <img src="assert/imgs/10.jpeg" class="card-img-top" alt="德文 Devin">
+                <div class="card-body text-center">
+                  <h5 class="card-title">大卫王(法国蓝带厨师)</h5>
+                  <a href="javascript:;" class="btn btn-primary btnwide" onclick="todetail()">投票
+                    <span>3217票</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      <div>
+        <div class="title mt-3">活动规则</div>
+        <div style="padding: 5px;">
+          <p>本次大赛面向全网招募，不限地域，参赛者需按照法律法规预备食材（不得出现非法添加食材，野生动物）。一经发现违规立刻取消参评资格，由参赛者自行承担相关责任。禁止采取第三方推流行为，一经发现取消参赛资格。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+  <script src="assert/js/common.js"></script>
+  <script src="assert/js/index.js"></script>
+</body>
+</html>
